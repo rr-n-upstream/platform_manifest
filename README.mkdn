@@ -133,7 +133,7 @@ The number before the letter G at the end specifies the amount of space CCache c
 	If you have Samsung camera set:
 	  $ export VENDOR_SAMUNG=true
 	  
-	If you have Samsung camera set:
+	If you have Sony camera set:
 	  $ export VENDOR_SONY=true
 	  
 ##### To build Resurrection Remix ROM
