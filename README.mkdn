@@ -1,5 +1,5 @@
 
-Resurrection Remix OS Nougat Source 2018
+Resurrection Remix OS Nougat Source 2019 FOR SAMSUNG GALAXY S3 NEO
 ===================
 
 [Crowdin for translations](https://crowdin.com/project/resurrectionremix/)
@@ -129,10 +129,17 @@ Congratulations on the succesfull build initialization! Now, we shall go ahead a
      -M 50G
 The number before the letter G at the end specifies the amount of space CCache can use in your storage unit. As such, ensure that not too much of space is specified as this might result in unexpected errors although, the more storage you have, its recommended to have more CCache as it will increase the build times. Most efficient build systems are able to utilize CCache to about 120G or more.
 
+##### Set your device vendor type
+	If you have Samsung camera set:
+	  $ export VENDOR_SAMUNG=true
+	  
+	If you have Samsung camera set:
+	  $ export VENDOR_SONY=true
+	  
 ##### To build Resurrection Remix ROM
 
       $ cd ~/RR
-      $ . build/envsetup.sh && brunch <device>
+      $ . build/envsetup.sh && brunch <device> WITH_DEXPREOPT=false 2>&1
 
 ##### Obtaining the zip created from the build process
 To get the zip file that has been built, navigate to the following directory and find for the zip file:
