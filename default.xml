@@ -25,6 +25,10 @@
   <remote  name="rr-up"
 	   fetch="https://github.com/rr-n-upstream"
 	   revision="nougat" />
+	   
+  <remote  name="rr-dt"
+	   fetch="https://github.com/rr-n-upstream"
+	   revision="rr-n" />
 
   <!-- AOSP Projects -->
   <project path="build" name="android_build" remote="rr-n-upstream" >
@@ -497,5 +501,6 @@
 
   <include name="snippets/rr-n.xml" />
   <include name="snippets/cm.xml" />
+  <include name="snippets/neotree.xml" />
 
 </manifest>
